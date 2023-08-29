@@ -1,0 +1,417 @@
+@charset "UTF-8";   /* 인코딩 문자 깨짐 방지 */
+
+html {
+    /* 사용자가 설정한 문자 크기 그대로 반영 될 수 있도록 */
+    font-size : 100%;
+ 
+}
+
+body {
+    height: 100vh; /* 전체 뷰포트 높이만큼 설정 */
+    background-color: black;
+    line-height: 2.0;
+    
+}
+
+a {
+    text-decoration : none;
+}
+
+img {
+    max-width : 100%;
+}
+
+
+/* 콘텐츠의 최대 출력 너비 설정 */
+.wrapper {
+    /* max-width: 1500px; */
+    margin : 0 auto;
+    padding : 0 4%;
+}
+
+
+
+
+/* 두 번째 페이지 -------------------------------------------------*/
+
+/* 로고 크기 및 여백*/
+.logo {
+    width: 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 14px;
+}
+
+/*list -----------------------------------------------*/
+
+.main-list {
+    
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    flex-direction: column;  /* 위에서 아래로 정렬*/
+    list-style-type: none;
+    font-weight: 900;
+    font-size: 48px;
+    height: 80vh;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.main-list li {
+    line-height : 1.5;
+}
+
+.main-list a{
+    color: white;
+    
+}
+
+.main-list a:hover {
+    color: yellow;
+}
+
+.colored-letter {
+    color:rgba(255, 0, 0, 1);
+}
+
+.colored-letter1 {
+    color:rgba(36, 255, 0, 1);
+}
+
+.colored-letter2 {
+    color:rgba(0, 56, 255, 1);
+}
+
+/* footer ------------------------------------------------*/
+footer {
+    background-color: rgba(249, 34, 189, 1);
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    /* padding: 5px 0; */
+}
+
+footer p {
+    color: rgba(80, 42, 42, 1);
+}
+
+/* ABOUT ME --------------------------------------------*/
+
+/* nav 메뉴 */
+.main-nav {
+    display: flex;
+    list-style-type: none;
+    font-size : 1.25rem;
+    margin-top: 34px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-nav a {
+    color: rgba(153, 148, 148, 1);
+}
+
+.main-nav a:hover {
+    color: palevioletred;
+}
+
+.main-nav li {
+    margin-right: 15px;
+}
+/* 로고와 내비의 수평 정렬 */
+.page2-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* ABOUTME 왼쪽 */
+
+.bubble {
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 130px;   
+    position: relative;
+
+}
+
+.bubble img {
+    width: 480px;
+    height: auto;
+}
+
+.bubble p {
+    color: white;
+    position: absolute;
+    top:150px;
+    left: 230px;
+    font-family: 'Gaegu', cursive;
+    font-size: 36px;
+}
+
+.me {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+.me:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+
+
+
+
+/* ABOUT ME 오른쪽 */
+
+.profile-list{
+    font-family: 'Inter', sans-serif;
+    margin-left: 50px;
+}
+.profile-aboutme {
+    color: rgba(249, 254, 13, 1);
+    font-size: 82px;
+    font-weight: 900; 
+    word-wrap: break-word;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-family: 'Gluten', cursive;
+    /* color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 8px #fff, 0 0 20px rgba(249, 254, 13, 1),
+    0 0 53px rgba(249, 254, 13, 1), 0 0 65px rgba(249, 254, 13, 1), 0 0 80px rgba(249, 254, 13, 1), 0 0 110px rgba(249, 254, 13, 1); */
+}
+
+.profile-list-in {
+    color: white;
+    list-style-type: none;
+    font-size: 35px;
+    font-family: 'Gaegu', cursive;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.profile-list-in li {
+    line-height : 1.5;
+}
+
+.first {
+    color: rgba(0, 255, 87, 1);
+}
+
+/* 나란히 */
+.profile {
+    /* display: inline-block; */
+    float: left;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+/* skill ---------------------------------------------------*/
+
+.NEON-NAME {
+    color: rgba(249, 254, 13, 1);
+    font-size: 35px;
+    font-weight: 900; 
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    text-shadow: 25px 4px 4px rgba(252, 246, 192, 0.25);
+    font-family: 'Gluten', cursive;
+    text-align: center;
+    /* color: #rgba(249, 254, 13, 1);
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 12px #fff, 0 0 42px rgba(249, 254, 13, 1),
+    0 0 35px rgba(249, 254, 13, 1), 0 0 40px rgba(249, 254, 13, 1), 0 0 65px rgba(249, 254, 13, 1), 0 0 90px rgba(249, 254, 13, 1); */
+}
+
+.skill-list {
+    display: grid;
+    gap: 37px;
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    /* margin-bottom : 150px;
+    margin-left: 224px;
+    margin-right: 224px; */
+    border-style: ridge;
+    box-shadow: 5px 5px 3px 2px gray;
+    background-color: rgba(148, 164, 152, 0.35);
+    width: 1000px;
+    height: 600px;
+}
+
+.item {
+    margin-top: 50px;
+    margin-bottom: 10px;   
+    float: left;
+}
+
+/* article{
+    width: 55%;
+} */
+
+@media (max-width:600px) {
+    body {
+        font-size: 80%;
+    }
+    .page2-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 내비 글자 크기 및 여백 축소 */
+    .main-nav {
+            font-size : 1rem;
+            margin-top : 10px;
+    }
+    
+    .main-nav li {
+            margin : 0 10px;
+    }
+
+    .me {
+        width: 80px;
+        height: auto;
+        top: 55px;
+        left: 40px;
+    }
+
+    .bubble {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .bubble p {
+        font-size: 15px;
+        top: 90px;
+        left: 145px;
+    }
+
+    .profile {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    
+    .profile-aboutme {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .profile-list {
+        margin-bottom: 50px; 
+    }
+
+    .profile-list li {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .skill-list {
+        grid-row: auto;
+        grid-column: auto;
+        width: 300px;
+        height: auto;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    /* 그리드 아이템도 작은 화면에 맞게 조정 */
+    .item {
+        margin-top: 10px;
+        width: 100px;
+        height: auto;
+    }
+}
+
+/* contacts ----------------------------------------------------*/
+
+.contacts-item {
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    height: 50vh; /* 전체 뷰포트 높이만큼 설정 */
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
+}
+.contacts-item li {
+    width: 100px;
+    height: auto;
+    /* display: inline-block;  */
+    margin-left: 100px;    
+}
+
+.github {
+    filter: brightness(80);
+}
+
+/* portfolio ------------------------------------------------------*/
+.portfolio-list {
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    
+}
+.portfolio {
+    color: white;  
+    text-align: center;
+    background-color: rgba(222, 216, 221, 1);
+    height: 600px;
+    width: 350px;
+    margin-left: 50px;
+    
+}
+
+.portfolio h2 {
+    background-color: rgba(153, 148, 148, 1);
+    height: 50px;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    font-family: 'Gaegu', cursive;
+}
+
+.portfolio img {
+    height: 219px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.portfolio a {
+    margin-top: 100px;
+    font-family: 'Gochi Hand', cursive;
+    color: rgba(80, 42, 42, 1);
+    font-size: 48px;
+}
+
+.portfolio a:before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    background: url(../images/check.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 3rem;
+    overflow: hidden;
+    transition: width 0.2s cubic-bezier(0.18,0.45,0.1,0.98);
+}
+
+.portfolio a:after {
+    opacity: 0;
+    content: attr(data-text);
+    position: absolute;
+    margin: auto;
+    color: #1B191C;
+    transform: translate(-24px,0);
+    transition: opacity 0.2s cubic-bezier(0.18,0.45,0.1,0.98),transform 0.9s cubic-bezier(0.18,0.45,0.1,0.98);
+}

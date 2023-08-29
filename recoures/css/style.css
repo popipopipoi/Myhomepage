@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0; /* 기본 마진 제거 */
+    display: flex; /* Flex 컨테이너 설정 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    height: 100vh; /* 전체 뷰포트 높이만큼 설정 */
+    background-color: black;
+    color: #432;
+    line-height: 2.0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* 시작과 끝에서 불 키기 (불투명도 1) */
+    }
+    10%, 90% {
+        opacity: 0.2; /* 깜박임 (불투명도 0.2) */
+    }
+    20%, 80% {
+        opacity: 0; /* 불 끄기 (불투명도 0) */
+    }
+}
+
+/* 첫 번째 페이지 ----------------------------------------------------*/
+
+/* 메뉴 보기 버튼*/
+.button {
+    width: 500px;
+    height: auto;
+    animation: blink 0.5s 3;
+}
+
+
+
+
+
+
+
+
